@@ -16,7 +16,6 @@ def test_health():
     assert response.json() == {"status": "ok"}
 
 
-
 def test_create_task():
     """POST /tasks with valid payload returns 201 and the created task."""
     payload = {"title": "Write tests", "done": False}
